@@ -7,7 +7,7 @@ Client -> Angular App
 
 Server -> .NET 6
 * RestAPI
-    * Authentication APIs
+    * Authentication APIs (Login/Register)
         * EF Core
         * Microsoft Identity
         
