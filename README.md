@@ -9,6 +9,7 @@ Server -> .NET 6
 * RestAPI
     * Authentication APIs (Login/Register)
         * EF Core
+        * SQL Server
         * Microsoft Identity
         
 * GraphQL/Hot Chocolate
