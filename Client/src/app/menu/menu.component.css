@@ -1,0 +1,9 @@
+.active{
+    font-weight: bold;
+    font-style: italic;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: rgba(255,255,255,.55);
+}

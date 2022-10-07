@@ -1,0 +1,25 @@
+<div class="row"> 
+  <br>
+  <div class="row">
+    <div class="col-md-5">
+      <select class="form-select select" #mySelect
+      (change)='onOptionSelected(mySelect.value)'>>
+        <option disabled selected>Choose an asset</option>
+        <option *ngFor="let asset of assets" [value]="asset.assetId">
+            {{asset.assetId}}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-18">
+      <br>
+      <h2 *ngIf="showSummary">Summary:</h2>
+      <h4 *ngIf="showSummary"><b>Name:</b> {{currentAsset.name ? currentAsset.name : 'No info'}}</h4>
+      <h4 *ngIf="showSummary"><b>Description:</b> {{currentAsset.description ? currentAsset.description : 'No info'}}</h4>
+      <h4 *ngIf="showSummary"><b>Price:</b> {{currentAsset.price.toFixed(2)}}</h4>
+      <h4 *ngIf="showSummary"><b>Change last 24h:</b> {{currentAsset.last24h.toFixed(2)}}%</h4>
+      <h4 *ngIf="showSummary"><b>Change last 7 days:</b> {{currentAsset.last7d.toFixed(2)}}%</h4>
+    </div>
+  </div>
+</div>
